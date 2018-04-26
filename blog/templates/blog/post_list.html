@@ -1,0 +1,215 @@
+<html>
+    <head>
+        <title>Online Auction</title>
+        <link type="text/css"
+              rel="stylesheet"
+              href="stylesheet.css">
+
+    <style>
+
+
+           li a.active {
+           background-color: #4CAF50;
+           color: white;
+           }
+           li a:hover:not(.active) {
+           background-color: #555;
+           color: white;
+           }
+          * {
+            box-sizing: border-box;
+            }
+            input[type=text], select, textarea
+            {
+              width: 100%;
+              padding: 12px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              resize: vertical;
+              }
+             label {
+                padding: 12px 12px 12px 0;
+                display: inline-block;
+                }
+             input[type=submit] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                float: right;
+                }
+                input[type=submit]:hover {
+                 background-color: #45a049;
+                 }
+                 .container {
+                 border-radius: 5px;
+                 background-color: #f2f2f2;
+                 padding: 20px;
+                 }
+                 .col-25 {
+                  float: left;
+                  width: 25%;
+                  margin-top: 6px;
+                  }
+                  .col-75 {
+                  float: left;
+                  width: 75%;
+                  margin-top: 6px;
+                  }
+                  .row:after {
+                  content: "";
+                  display: table;
+                  clear: both;
+      @media screen and (max-width: 600px) {
+      width: 100%;
+      margin-top: 0;
+      }
+       * {
+            box-sizing: border-box;
+            }
+            input[type=text], select, textarea
+            {
+              width: 100%;
+              padding: 12px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              resize: vertical;
+              }
+             label {
+                padding: 12px 12px 12px 0;
+                display: inline-block;
+                }
+             input[type=Login] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                float: right;
+                }
+                input[type=Login]:hover {
+                 background-color: #45a049;
+                 }
+                 .container {
+                 border-radius: 5px;
+                 background-color: #f2f2f2;
+                 padding: 20px;
+                 }
+                 .col-25 {
+                  float: left;
+                  width: 25%;
+                  margin-top: 6px;
+                  }
+                  .col-75 {
+                  float: left;
+                  width: 75%;
+                  margin-top: 6px;
+                  }
+                  .row:after {
+                  content: "";
+                  display: table;
+                  clear: both;
+
+      @media screen and (max-width: 600px) {
+      width: 100%;
+      margin-top: 0;
+      }
+
+
+    </style>
+    </head>
+    <body>
+        <div id="nav">
+            <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#Register"class="active">Registration</a></li>
+            <li><a href="">About Us</a> </li>
+            <li><a href="#login">Login</a> </li>
+                </ul>
+        </div>
+
+        <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2 id="home"><a href="/">Welcome to Auction Website.</a></h2>
+            <p>Welcome to my Website. My Website can auction for Antique items.If you find it interesting, you can register now.
+            In our Website, you can easily auction your items. My site can only auction for the antique items.</p>
+        </div>
+        <div>
+            <h2 id="Register"><a class="active">Create a new Account</a> </h2>
+            <p>Use the Form below to create a new Account.</p>
+            <div class="container">
+                <form action="/action_page.php">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">First Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lname">Last Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="country">Country</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="country" name="country">
+                                <option value="australia">Australia</option>
+                                <option value="canada">Canada</option>
+                                <option value="usa">USA</option>
+                            </select>
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="address">Address</label>
+                                </div>
+                                <div class="col-75">
+                                 <textarea id="Address" name="Address" placeholder="Write something.." style="height:200px">
+                                 </textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </div>
+                    </div>
+                   <h2 id="login"><a href=" ">Log In</a> </h2>
+            <p>Please Enter Your username and password. Register? if you don't have an account.</p>
+            <div class="container">
+                <form action="/action_page.php">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="username">User Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="username" name="username" placeholder="Your User name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="password">Password</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="password" name="Password" placeholder="Your Password..">
+                        </div>
+                        <div class="row">
+                                <input type="button" value="Login">
+                            </div>
+                    </div>
+                </form>
+            </div>
+                </form>
+          </div>
+         </form>
+        </div>
+    </body>
+</html>
